@@ -31,4 +31,9 @@
             font-weight: 600;
             font-family: monospace;
             border: 2px solid yellow;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: yellow;
+            color: grey;
         }

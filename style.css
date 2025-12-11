@@ -14,21 +14,21 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
-            background-color: limegreen;
+            background-color: lightcoral;
             gap: 30px;
             align-items: center;
         }
         h1{
-            color: darkgreen;
+            color: red;
             font-size: 32px;
             font-family: monospace;
         }
         button{
             all: unset;
             padding: 16px 20px;
-            color: darkgreen;
+            color: red;
             font-size: 18px;
             font-weight: 600;
             font-family: monospace;
-            border: 2px solid darkgreen;
+            border: 2px solid red;
         }

@@ -1,0 +1,14 @@
+1. Why Responsive Design Really Matters
+-> Real-life examples of broken vs perfectly responsive websites.
+-> Impact on user experience, SEO, retention and conversions.
+-> Mobile-first as the default way people browse.
+-> Industry standards : why every serious frontend dev needs to master this.
+
+2. Units & Viewports: The Real Foundation
+    ** Absolute Units **
+    -> px (pixels): The most common unit, fixed and doesn't scale.
+    
+    ** Realtive Units **
+    -> em: Relative to the font-size of the parent.
+    -> rem: relative to the root element's font-size. Best for consistent scaling.
+    -> %: Relative to the parent element's size, used for width, padding, margin, etc.

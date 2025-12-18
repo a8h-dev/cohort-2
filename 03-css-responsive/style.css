@@ -78,7 +78,7 @@ body{
 } */
 
 /* em : Relative to font-size of parent */
-#parent{
+/* #parent{
     font-family: cursive;
     height: 400px;
     width: 700px;
@@ -93,4 +93,23 @@ h4{
 }
 p{
     font-size: 1em;
+} */
+
+
+/* rem : Relative to the root element's font size. Best for consistent scaling */
+#parent{
+    font-family: cursive;
+    height: 400px;
+    width: 700px;
+    background-color: rgb(9, 66, 125);
+    font-size: 20px;
 }
+h1{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2rem;
+}
+p{
+    font-size: 1rem;
+}   

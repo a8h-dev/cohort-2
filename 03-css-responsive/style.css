@@ -97,6 +97,7 @@ p{
 
 
 /* rem : Relative to the root element's font size. Best for consistent scaling */
+/* 1rem = 16px */
 #parent{
     font-family: cursive;
     height: 400px;

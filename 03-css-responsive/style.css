@@ -71,8 +71,26 @@ body{
 /* vmax: viewport minimum */
 /* width > height : height as vh */
 /* width < height : width as vw */
-#box{
+/* #box{
     height: 30vmin;
     width: 30vmin;
     background-color: aqua;
+} */
+
+/* em : Relative to font-size of parent */
+#parent{
+    font-family: cursive;
+    height: 400px;
+    width: 700px;
+    background-color: rgb(9, 66, 125);
+    font-size: 20px;
+}
+h1{
+    font-size: 3em;
+}
+h4{
+    font-size: 1.5em;
+}
+p{
+    font-size: 1em;
 }

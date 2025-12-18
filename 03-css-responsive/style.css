@@ -44,8 +44,16 @@ body{
 
 
 /* vw : Depending on screen width */
-#box{
+/* #box{
     height: 20vw;
     width: 20vw;
+    background-color: crimson;
+} */
+
+
+/* vh : Depending on screen height */
+#box{
+    height: 40vh;
+    width: 40vh;
     background-color: crimson;
 }

@@ -52,8 +52,17 @@ body{
 
 
 /* vh : Depending on screen height */
-#box{
+/* #box{
     height: 40vh;
     width: 40vh;
     background-color: crimson;
+} */
+
+/* vmax: viewport maximum */
+/* width > height : widhth as vw */
+/* width < height : height as vh */
+#box{
+    height: 30vmax;
+    width: 30vmax;
+    background-color: aqua;
 }

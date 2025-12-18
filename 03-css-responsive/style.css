@@ -7,4 +7,24 @@ html,
 body{
     height: 100%;
     width: 100%;
+
+    /* protect damaging eyes */
+    background-color: #111;
+    color: #fff;
+}
+
+/* Pixels : Relative to DPR not directly screen pixels */
+/* Pixels are fixed */
+h1{
+    font-size: 50px; 
+}
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+}
+#inner{
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
 }

@@ -61,8 +61,18 @@ body{
 /* vmax: viewport maximum */
 /* width > height : widhth as vw */
 /* width < height : height as vh */
-#box{
+/* #box{
     height: 30vmax;
     width: 30vmax;
+    background-color: aqua;
+} */
+
+
+/* vmax: viewport minimum */
+/* width > height : height as vh */
+/* width < height : width as vw */
+#box{
+    height: 30vmin;
+    width: 30vmin;
     background-color: aqua;
 }

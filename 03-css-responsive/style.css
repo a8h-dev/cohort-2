@@ -15,7 +15,7 @@ body{
 
 /* Pixels : Relative to DPR not directly screen pixels */
 /* Pixels are fixed */
-h1{
+/* h1{
     font-size: 50px; 
 }
 #box{
@@ -27,4 +27,17 @@ h1{
     height: 100px;
     width: 100px;
     background-color: lightblue;
+} */
+
+
+/* % : Depending on Parent */
+#parent{
+    height: 700px;
+    width: 600px;
+    background-color: lightblue;
+}
+#child{
+    height: 50%;
+    width: 50%;
+    background-color: crimson;
 }

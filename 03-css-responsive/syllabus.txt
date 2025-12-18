@@ -20,3 +20,16 @@
     ** Useful Modern Units **
     -> ch: Width of the "0" character in the current font. Useful for input fields.
     -> lh: Relative to the line height of the element
+
+3. CSS Layouts: Flexbox and Grid for Responsive Structure
+    -> Introduction to display: flex and its behaviour
+    -> Key properties: flex-direction, justify-content, align-items, flex-wrap, gap, flex-grow, order
+    -> Use-cases and limitations
+    -> Introduction to display: grid
+    -> Key properties: grid-template-columns, grid-template-rows, gap, grid-auto-flow, auto-fit, auto-fill, minmax()
+    -> When to use Grid over Flexbox for layout patterns?
+    -> Layout patterns:
+        _> Hero sections
+        _> Card grids
+        _> Navigation bars
+        _> Header + Sidebar + Main content

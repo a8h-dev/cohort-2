@@ -10,25 +10,72 @@ body{
 }
 body{
     background-color: #111;
-    color: #fff;
 }
-#box{
-    height: 300px;
-    width: 300px;
-    background-color: crimson;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px 30px ;
+    font-family: monospace;
+}
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.nav1 img{
+    height: 50px;
+    cursor: pointer;
+}
+.nav1 h6{
+    font-size: 17px;
+    width: 50px;
+    cursor: pointer;
+    font-weight: 100;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+.nav2 h4{
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 100;
+}
+.nav2 h5{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
 }
 
-@media (max-width: 700px) and (min-width: 600px){
-    #box{
-        height: 200px;
-        width: 200px;
-        background-color: rgb(12, 106, 140);
+/* @media (orientation: landscape) {
+    
+} */
+/* @media (orientation: portrait) {
+    
+} */
+/* @media (resolution) {
+    
+} */
+
+@media (max-width: 600px) {
+    nav{
+        padding: 15px;
     }
-}
-@media (max-width: 500px) {
-    #box{
-        height: 150px;
-        width: 150px;
-        background-color: rgb(53, 167, 15);
+    .nav1 img{
+        height: 35px;
+    }
+    .nav1 h6{
+        font-size: 11px;
+    }
+    .nav2 h4{
+        display: none;
+    }
+    .nav2 h5{
+        display: block;
     }
 }

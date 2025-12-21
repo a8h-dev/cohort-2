@@ -1,0 +1,5 @@
+Search Tailwind CSS
+Go to https://tailwindcss.com/
+Click on Get Started
+Click on Play CDN
+Copy script tag <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> and paste on HTML head under title

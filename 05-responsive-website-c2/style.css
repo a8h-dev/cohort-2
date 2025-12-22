@@ -13,6 +13,10 @@
   font-family: hell;
   src: url(./HelveticaNowDisplay-Medium_2wEhlmo-TD_wsqqEEwmJC.woff2);
 }
+@font-face {
+  font-family: hell-bold;
+  src: url(.//HelveticaNowDisplay-Bold_VMHV5twUMR.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -47,6 +51,8 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .nav1 {
   display: flex;
@@ -267,22 +273,22 @@ main {
     font-size: 2.5vw;
     width: 45%;
   }
-  .left .price{
+  .left .price {
     font-size: 5vw;
   }
-  .section1 .left .tags h4{
+  .section1 .left .tags h4 {
     padding: 10px 20px;
     border-radius: 4px;
     white-space: nowrap;
   }
   .section1 .left .cta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin: 20px 0;
-}
-  .cta button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .cta button {
     width: 50%;
     padding: 15px 0;
   }
@@ -290,5 +296,49 @@ main {
 @media (max-width: 600px) {
   .section1 .left h1 {
     font-size: 5vw;
+  }
+}
+
+.section2 {
+  padding: 100px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section2 div h1 {
+  font-family: hell-bold;
+  font-size: 150px;
+  position: relative;
+  background-image: url(https://ik.imagekit.io/sheryians/Aptitude%20&%20Reasoning/mask%20Large_ZB4lGN8hWZ.png);
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+}
+.section2 div .bloom {
+  position: absolute;
+  filter: blur(80px);
+}
+
+.section2 h3 {
+  font-size: 45px;
+  font-family: hell;
+  text-transform: capitalize;
+  letter-spacing: -1px;
+  font-weight: 100;
+}
+
+@media (max-width: 900px) {
+  .section2 div h1 {
+    font-size: 15vw;
+    white-space: nowrap;
+  }
+  .section2 div .bloom {
+  position: absolute;
+  filter: blur(10vw);
+}
+  .section2 h3{
+    text-align: center;
+    font-size: 4vw;
   }
 }

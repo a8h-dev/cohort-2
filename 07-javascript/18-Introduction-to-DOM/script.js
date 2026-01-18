@@ -8,3 +8,9 @@
 // - Changing HTML
 // - Changing CSS
 // - Event Listeners
+
+// https://youtu.be/2IPEp_4obGw?si=NHyfOA19wcqBlpZ2
+// https://youtu.be/_7IR39vOKfU?si=8RvecDmmNcRIYUTR
+
+// TASK -
+// Make a counter

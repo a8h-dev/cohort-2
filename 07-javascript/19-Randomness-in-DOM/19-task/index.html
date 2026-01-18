@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19 Task - Make a IPL 2026 winner guessing game</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        main{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(128, 128, 201);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            width: 50%;
+            height: 600px;
+            background-color: rgb(199, 78, 102);
+            border: 2px solid #000;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        p{
+            font-size: 24px;
+            font-family: monospace;
+            padding: 8px;
+        }
+        button{
+            padding: 12px 22px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            background-color: crimson;
+            color: #fff;
+        }
+        button:active{
+            scale: .95;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <p>Team: 
+                <span class="team"></span>
+            </p>
+            <p>Full Name: 
+                <span class="fullName"></span>
+            </p>
+            <p>Trophies: 
+                <span class="trophies"></span>
+            </p>
+            <p>Caption: 
+                <span class="caption"></span>
+            </p>
+        </div>
+        <button>Reveal!</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -8,6 +8,7 @@ btn.addEventListener("click", function(){
     let rotation = Math.floor(Math.random()*360)
     let borderRadius = Math.floor(Math.random()*100)
     let border = Math.floor(Math.random()*10)
+    let scale = Math.floor(Math.random()*3)
 
     let c1 = Math.floor(Math.random()*256)
     let c2 = Math.floor(Math.random()*256)
@@ -29,7 +30,8 @@ btn.addEventListener("click", function(){
     div.style.position = "absolute";
     div.style.left = x+"%";
     div.style.top = y+"%";
-
+    div.style.scale = scale;
+    
     btn.style.position = "relative";
     btn.style.zIndex = "1";
     

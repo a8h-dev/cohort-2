@@ -78,3 +78,42 @@ main {
   -webkit-box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
+@media (max-width: 900px) {
+
+  main {
+    height: 100vh;              
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    display: flex;
+    align-items: center;        
+    justify-content: flex-start;
+    padding: 0 16px;            
+  }
+
+  .piano {
+    width: max-content;
+    min-width: 900px;
+    height: 260px;
+
+    box-sizing: content-box;
+  }
+
+  .sec-con section {
+    height: 170px;
+    gap: 6px;
+  }
+
+  .piano > div {
+    font-size: 14px;
+  }
+
+  .sec-con section div {
+    font-size: 12px;
+  }
+
+  main::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  height: 100%;
+  width: 100%;
+  background-color: #c1c1c1;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.piano {
+  width: 80%;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  user-select: none;
+}
+.piano div {
+  background-color: #fff;
+  width: 4.7619047619%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 12px;
+  border: 1px solid #111;
+  font-size: 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.piano div:active {
+  box-shadow: none;
+  margin-top: 10px;
+}
+.sec-con {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+.sec-con section {
+  display: flex;
+  width: 85%;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  gap: 10px;
+}
+.sec-con section div {
+  background-color: #000;
+  width: 6.7619047619%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.75);
+}

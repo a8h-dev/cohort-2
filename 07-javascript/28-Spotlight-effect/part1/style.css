@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+/* linear gradient */
+/* radial gradient */
+/* custom css variables */
+
+/* conic gradient  -> ye baad me */
+
+/* .box{
+    height: 400px;
+    width: 400px;
+    border: 1px solid #fff;
+
+    yeha color code hai in oklab, in hsl ye sab. ham ye tab use krte hain jab hame ekdum perfection chahiye hota hai
+    background: linear-gradient(in hsl to right, white, red, purple);
+
+    radial gradient me at dekr x and y axis ka position de sakte hain
+    background: radial-gradient(300px at 100px 100px, red, blue);
+} */
+
+/* custom css variables / css custom properties / css root variables -> ek concept ke hi itne sare names hain */ 
+/* ye concept top level ke companies use krti hain */
+
+:root{
+    --x: 300px;
+    --y: 200px;
+}
+
+body{
+    background-image: url(https://images.pexels.com/photos/5589917/pexels-photo-5589917.jpeg);
+    background-size: cover;
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    /* background: radial-gradient(150px at var(--x) var(--y), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.936)); */
+    
+    /* spread */
+    background: radial-gradient(150px at var(--x) var(--y), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.819) 80%, rgba(0, 0, 0, 0.936));
+
+}
+

@@ -1,0 +1,55 @@
+/* Box-shadow */
+/* Text-shadow */
+/* conic-gradient */
+/* Keyframes */
+/* @property */
+
+/* :has() */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes changeBG {
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: blue;
+    }
+}
+
+
+/* @property */
+/* color, length, angle */
+@property --bgColor{
+    syntax: "<color>";
+    initial-value: rgb(255, 200, 0);
+    inherits: false;
+}
+
+.box {
+  height: 200px;
+  width: 300px;
+  border: 1px solid #fff;
+  animation: changeBG 5s;
+
+  background-color: var(--bgColor);
+}
+
+/* descrete properties in css */
+/* properties we can't animate generally */
+/* display none, visibility hidden */

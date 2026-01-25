@@ -27,7 +27,7 @@
 // let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`
 
 // async function getWeather(city){
-//     let apikey = "3ec8f74a327c621250607dcd3b061d9a";
+//     let apikey = prompt("enter api key");
 //     await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`
 //     ).then(raw => raw.json())
 //     .then(result => {
@@ -38,7 +38,7 @@
 
 // async function getWeather(city) {
 //   try {
-//     let apikey = `3ec8f74a327c621250607dcd3b061d9a`;
+//     let apikey = prompt("enter api key");
 
 //     let raw = await fetch(
 //       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`,

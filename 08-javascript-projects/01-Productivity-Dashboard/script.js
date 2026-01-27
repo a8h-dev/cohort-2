@@ -43,6 +43,14 @@ function todoList() {
     });
     allTask.innerHTML = sum;
     localStorage.setItem("currentTask", JSON.stringify(currentTask));
+
+    let markCompletedBtn = document.querySelectorAll(".task button");
+    markCompletedBtn.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        currentTask.splice(btn.id, 1);
+        renderTask();
+      });
+    });
   }
   renderTask();
 
@@ -56,20 +64,10 @@ function todoList() {
     });
 
     renderTask();
-    location.reload();
 
     taskInput.value = "";
     taskDetailsInput.value = "";
     taskCheckBox.checked = false;
-  });
-
-  let markCompletedBtn = document.querySelectorAll(".task button");
-  markCompletedBtn.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      currentTask.splice(btn.id, 1);
-      location.reload();
-      renderTask();
-    });
   });
 }
 todoList();

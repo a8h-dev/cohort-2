@@ -104,3 +104,17 @@ function dailyPlanner() {
   });
 }
 dailyPlanner();
+
+function motivationQuote(){
+  let motivationQuote = document.querySelector(".motivation2 h1");
+  let motivationAuthor = document.querySelector(".motivation3 h2 span");
+  
+  async function fetchQuote(){
+    let response = await fetch('https://api.quotable.io/random');
+    let data = await response.json();
+    motivationQuote.innerHTML = data.content;
+    motivationAuthor.innerHTML = data.author;
+  }
+  fetchQuote();
+}
+motivationQuote();

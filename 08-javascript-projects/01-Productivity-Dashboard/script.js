@@ -15,7 +15,7 @@ function openFeatures() {
     });
   });
 }
-openFeatures();
+// openFeatures();
 
 function todoList() {
   let form = document.querySelector(".addTask form");
@@ -70,4 +70,5 @@ function todoList() {
     taskCheckBox.checked = false;
   });
 }
-todoList();
+// todoList();
+

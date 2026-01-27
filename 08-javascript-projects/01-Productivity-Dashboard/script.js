@@ -15,7 +15,7 @@ function openFeatures() {
     });
   });
 }
-// openFeatures();
+openFeatures();
 
 function todoList() {
   let form = document.querySelector(".addTask form");
@@ -70,17 +70,37 @@ function todoList() {
     taskCheckBox.checked = false;
   });
 }
-// todoList();
+todoList();
 
-let hours = Array.from({length:18},(elem, idx) => `${6+idx}:00 - ${7+idx}:00`)
+function dailyPlanner() {
+  let dayPlanData = JSON.parse(localStorage.getItem("dayPlanData")) || {};
+  let dayPlanner = document.querySelector(".day-planner");
+  let hours = Array.from(
+    { length: 18 },
+    (elem, idx) => `${6 + idx}:00 - ${7 + idx}:00`,
+  );
 
-let wholeDaySum = "";
-hours.forEach(function(elem){
-  wholeDaySum += `<div class="day-planner-time">
+  let wholeDaySum = "";
+
+  hours.forEach(function (elem, idx) {
+    let savedData = dayPlanData[idx] || "";
+
+    wholeDaySum += `<div class="day-planner-time">
             <p>${elem}</p>
-            <input type="text" placeholder="...">
+            <input id=${idx} type="text" placeholder="..." value=${savedData}>
           </div>`;
-})
+  });
 
-let dayPlanner = document.querySelector('.day-planner');
-dayPlanner.innerHTML = wholeDaySum;
+  dayPlanner.innerHTML = wholeDaySum;
+
+  let dayPlannerInput = document.querySelectorAll(".day-planner input");
+
+  dayPlannerInput.forEach(function (elem) {
+    elem.addEventListener("input", function () {
+      dayPlanData[elem.id] = elem.value;
+
+      localStorage.setItem("dayPlanData", JSON.stringify(dayPlanData));
+    });
+  });
+}
+dailyPlanner();

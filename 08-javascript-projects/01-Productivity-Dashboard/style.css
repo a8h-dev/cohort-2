@@ -357,3 +357,37 @@ section.allElems{
     opacity: 0.8;
     width: 66px;
 }
+
+
+.pomodoro-timer-fullpage{
+    display: block;
+    position: relative;
+}
+.pomodoro-timer-fullpage h2{
+    font-size: 44px;
+}
+.pomodoro-timer-fullpage .pomo-timer{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.pomo-timer h1{
+    font-size: 150px;
+}
+.pomo-timer button{
+    background-color: var(--ternary2);
+    padding: 12px 40px;
+    font-size: 24px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px black;
+    transition: all ease 0.2s;
+}
+.pomo-timer button:active{
+    scale: 0.95;
+    box-shadow: 1px 1px 0px black;
+}

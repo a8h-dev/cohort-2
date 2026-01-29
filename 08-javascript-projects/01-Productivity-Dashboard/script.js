@@ -189,4 +189,80 @@ function pomoTimer() {
     updateTime();
   });
 }
-pomoTimer()
+pomoTimer();
+
+function weatherFunctionality() {
+  let apiKey = ``;
+  let city = `bhopal`;
+
+  let data = null;
+  var header1Time = document.querySelector(".header1 h1");
+  var header1Date = document.querySelector(".header1 h2");
+  var header2Temp = document.querySelector(".header2 h2");
+  var header2Condition = document.querySelector(".header2 h4");
+  var header2Precipitation = document.querySelector(".header2 .precipitation");
+  var header2Humidity = document.querySelector(".header2 .humidity");
+  var header2Wind = document.querySelector(".header2 .wind");
+
+  async function weatherAPICall() {
+    var response = await fetch(
+      `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`,
+    );
+    data = await response.json();
+
+    header2Temp.innerHTML = `${data.current.temp_c} °C`;
+    header2Condition.innerHTML = `${data.current.condition.text}`;
+    header2Precipitation.innerHTML = `Precipitation: ${data.current.precip_in}%`;
+    header2Humidity.innerHTML = `Humidity: ${data.current.humidity}%`;
+    header2Wind.innerHTML = `Wind: ${data.current.wind_kph} km/h`;
+  }
+  weatherAPICall();
+
+  var date = null;
+  function timeDate() {
+    const TotalDaysOfWeek = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+    const TotalMonthsOfYear = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    date = new Date();
+    var dayOfWeek = TotalDaysOfWeek[date.getDay()];
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+
+    var tarik = date.getDate();
+    var month = date.getMonth();
+    var year = date.getFullYear();
+
+    header1Date.innerHTML = `${tarik} ${TotalMonthsOfYear[month]}, ${year}`;
+
+    if (hours > 12) {
+      header1Time.innerHTML = `${dayOfWeek}, ${String(hours - 12).padStart("2", "0")}:${String(minutes).padStart("2", "0")}:${String(seconds).padStart("2", "0")} PM`;
+    } else {
+      header1Time.innerHTML = `${dayOfWeek}, ${String(hours).padStart("2", "0")}:${String(minutes).padStart("2", "0")}:${String(seconds).padStart("2", "0")} AM`;
+    }
+  }
+  setInterval(() => {
+    timeDate();
+  }, 1000);
+}
+weatherFunctionality();

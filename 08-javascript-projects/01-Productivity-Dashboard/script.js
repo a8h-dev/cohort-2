@@ -266,3 +266,32 @@ function weatherFunctionality() {
   }, 1000);
 }
 weatherFunctionality();
+
+function changeThemeFeature() {
+  let theme = document.querySelector(".theme");
+  var rootElement = document.documentElement;
+
+  var flag = 0;
+  theme.addEventListener("click", function () {
+    if (flag == 0) {
+      rootElement.style.setProperty("--primary", "#F8F4E1");
+      rootElement.style.setProperty("--secondary", "#222831");
+      rootElement.style.setProperty("--ternary1", "#948979");
+      rootElement.style.setProperty("--ternary2", "#393E46");
+      flag = 1;
+    } else if (flag == 1) {
+      rootElement.style.setProperty("--primary", "#e6e2e2");
+      rootElement.style.setProperty("--secondary", "#200061");
+      rootElement.style.setProperty("--ternary1", "#264bd3");
+      rootElement.style.setProperty("--ternary2", "#201a13");
+      flag = 2;
+    } else if (flag == 2) {
+      rootElement.style.setProperty("--primary", "#F8F4E1");
+      rootElement.style.setProperty("--secondary", "#381c0a");
+      rootElement.style.setProperty("--ternary1", "#FEBA17");
+      rootElement.style.setProperty("--ternary2", "#74512D");
+      flag = 0;
+    }
+  });
+}
+changeThemeFeature();

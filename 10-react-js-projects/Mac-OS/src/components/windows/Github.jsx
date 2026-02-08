@@ -9,8 +9,10 @@ const GitCard = ({data = {id:1, image:"", title:"", description:"", tags:[], rep
         <p className='description'>{data.description}</p>
 
         <div className="tags">
-            {data.tags.map(tag => {
-                    return <p className='tag'>{tag}</p>
+            {data.tags.map((tag, idx) => {
+                    return <div key={idx}>
+                      <p className='tag'>{tag}</p>
+                    </div>
                 })}
         </div>
 
@@ -26,8 +28,10 @@ const Github = () => {
     <div>
       <MacWindow>
         <div className="cards">
-            {githubData.map(project => {
-                return <GitCard data={project} />
+            {githubData.map((project, idx) => {
+                return <div key={idx}>
+                  <GitCard data={project} />
+                </div>
             })}
         </div>
       </MacWindow>

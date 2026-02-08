@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Markdown from 'react-markdown';
 import MacWindow from "./MacWindow";
 import './Note.scss'
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { androidstudio } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const Note = () => {
 
@@ -16,7 +18,7 @@ const Note = () => {
   return (
     <MacWindow>
         <div className="note-window">
-            {markDown ? <Markdown>{markDown}</Markdown> : <p>Loading...</p>}
+            {markDown ? <SyntaxHighlighter language="typescript" style={androidstudio}>{markDown}</SyntaxHighlighter> : <p>Loading...</p>}
         </div>
     </MacWindow>
   )

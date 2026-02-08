@@ -1,4 +1,3 @@
-```ts
 /**
  * @file: profile.config.ts
  * @author: Engineering Portfolio
@@ -103,5 +102,4 @@ $ user --status
 > Location: Global / Remote
 > Loading Assets... [||||||||||] 100%
 > Ready.
-
 ```

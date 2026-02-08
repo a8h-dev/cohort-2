@@ -15,3 +15,13 @@ npm i react-rnd
 --- 
 react markdown package for rendering txt file into react
 npm i react-markdown
+wrap text with ```ts ``` to solve spacing problem
+
+---
+react syntax highlighter for highlighting text
+npm i react-syntax-highlighter
+
+---
+use iframe to embed pdf and spotify music player
+
+---

@@ -25,3 +25,5 @@ npm i react-syntax-highlighter
 use iframe to embed pdf and spotify music player
 
 ---
+Terminal - React console emulator
+npm i react-console-emulator

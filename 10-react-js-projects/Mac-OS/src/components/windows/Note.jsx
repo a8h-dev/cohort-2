@@ -5,7 +5,7 @@ import './Note.scss'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { androidstudio } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
-const Note = () => {
+const Note = ({windowName, setWindowsState}) => {
 
     const [markDown, setMarkDown] = useState(null)
 
@@ -16,7 +16,7 @@ const Note = () => {
     },[])
 
   return (
-    <MacWindow>
+    <MacWindow windowName={windowName} setWindowsState={setWindowsState} >
         <div className="note-window">
             {markDown ? <SyntaxHighlighter language="typescript" style={androidstudio}>{markDown}</SyntaxHighlighter> : <p>Loading...</p>}
         </div>
